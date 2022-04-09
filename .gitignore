@@ -1,0 +1,4 @@
+.vscode
+*.exe
+\backjoon\*.exe
+\2022_kakao_enter\*.exe
