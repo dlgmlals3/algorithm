@@ -47,10 +47,6 @@ void Union(int p, int c) {
 }
 
 int main(void) {
-    ios_base::sync_with_stdio(false);
-    cin.tie(nullptr);
-    cout.tie(nullptr);
-
     int N;
     cin >> N;
     for (int i=1; i<=N; i++) parent[i] = i;
@@ -62,6 +58,7 @@ int main(void) {
         cin >> u >> v;
         coordies.push_back(make_pair(u, v));
     }
+    
 
     for (int i=1; i<=N-1; i++) {
         for (int j=i+1; j<=N; j++) {
@@ -71,9 +68,7 @@ int main(void) {
             edges.push_back(Edge(i, j, d));
         }
     }
-    
     sort(edges.begin(), edges.end(), comapre);
-    
     float ans = 0;
     for (Edge e : edges) {
         int u = Find(e.u);

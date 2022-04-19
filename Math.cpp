@@ -16,5 +16,6 @@ int main(void) {
     cout << "round : " << round(v2 * 100) / 100 << endl; 
     // 2째짜리 까지 버림
     cout << "floor : " << floor(v2 * 100) / 100 << endl; 
+    cout << "floor : " << round(3.14) << endl; 
     return 0;
 }
